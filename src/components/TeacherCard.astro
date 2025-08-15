@@ -1,0 +1,80 @@
+---
+const { post } = Astro.props;
+const t = post.frontmatter.teacher;
+---
+
+<div class="flex items-center justify-center ">
+  <div class="max-w-5xl w-full">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6 p-6">
+        <!-- Lado Izquierdo -->
+        <div class="p-4 flex flex-col text-left">
+          <div class="flex items-center gap-4">
+            <!-- Imagen -->
+            <img
+              src={t.photo}
+              alt={t.name}
+              class="w-38 h-48 rounded-lg object-cover border-4 border-purple-300 shadow flex-shrink-0"
+            />
+
+            <!-- Info al lado de la imagen -->
+            <div>
+              <h2 class="text-green-700 font-extrabold text-xl">{t.name}</h2>
+              <p class="text-purple-800 font-medium">{t.subject}</p>
+            </div>
+          </div>
+
+          <!-- Datos -->
+          <div class="mt-4 w-full text-sm space-y-1">
+            <p><span class="text-green-700 font-bold">Age:</span> {t.age}</p>
+            <p>
+              <span class="text-green-700 font-bold">Birthday:</span>
+              {t.birthday}
+            </p>
+            <p>
+              <span class="text-green-700 font-bold">Address:</span>
+              <a class="text-blue-600" href={`mailto:${t.address}`}
+                >{t.address}</a
+              >
+            </p>
+          </div>
+
+          <!-- Favoritos -->
+          <div class="mt-4 w-full">
+            <h3 class="text-green-700 font-bold mb-1">Favorites</h3>
+            <ul class="text-sm space-y-1">
+              {
+                Object.entries(t.favorites).map(([key, value]) => (
+                  <li>
+                    <span class="capitalize font-bold">{key}:</span> {value}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+
+        <!-- Lado Derecho -->
+        <div class="flex flex-col md:p-14">
+          <div class="flex items-center gap-2">
+            
+            <h3 class="text-2xl font-bold text-gray-700">Meet the Teacher</h3>
+            <span
+              class="bg-yellow-400 text-white font-bold px-4 py-1 rounded-full shadow"
+              >Hello!</span
+            >
+          </div>
+          <article class="mt-4 text-gray-700 leading-relaxed space-y-4">
+            <post.default />
+          </article>
+
+          <!-- Logos -->
+          <div class="flex items-center gap-4 mt-auto pt-6 justify-end">
+            <img src="/Logo-completo.png" alt="Logo 1" class="h-15" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TeacherCard from "../../components/TeacherCard.astro";
+import fs from "fs";
+import path from "path";
+import Navbar from "../../components/Navbar.astro";
+
+export async function getStaticPaths() {
+  const gradesDir = path.resolve('./src/content/grades');
+  const files = fs.readdirSync(gradesDir);
+
+  return files.map(file => {
+    const level = file.replace(/\.md$/, '');
+    return { params: { level } };
+  });
+}
+
+const { level } = Astro.params;
+const post = await import(`../../content/grades/${level}.md`);
+---
+
+<Layout>
+  <Navbar/>
+  <TeacherCard post={post} />
+</Layout>
