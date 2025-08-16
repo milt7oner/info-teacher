@@ -1,0 +1,131 @@
+---
+import dayjs from 'dayjs';
+import 'dayjs/locale/es.js';
+dayjs.locale('es');
+
+const events = [
+  {
+    date: '2025-08-20',
+    title: 'Día de Bienvenida',
+    color: 'bg-indigo-500',
+    description: 'Ceremonia de apertura del año escolar en el auditorio principal.'
+  },
+  {
+    date: '2025-08-28',
+    title: 'Reunión de Padres',
+    color: 'bg-green-500',
+    description: 'Encuentro con padres para presentar el plan de estudios.'
+  }
+];
+---
+
+<div class="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto px-4 py-8">
+  <!-- Calendario -->
+  <div class="bg-white rounded-2xl shadow-xl p-6 flex-1">
+    <div class="flex items-center justify-between mb-6">
+      <button id="prev-month" class="p-2 rounded-full hover:bg-gray-100 transition">
+        ◀
+      </button>
+      <h2 id="calendar-title" class="text-xl font-bold capitalize"></h2>
+      <button id="next-month" class="p-2 rounded-full hover:bg-gray-100 transition">
+        ▶
+      </button>
+    </div>
+    <div class="grid grid-cols-7 text-center text-gray-500 font-medium mb-2">
+      <div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div><div>Dom</div>
+    </div>
+    <div id="calendar-days" class="grid grid-cols-7 gap-2 text-center"></div>
+  </div>
+
+  <!-- Detalle del evento -->
+  <div id="event-detail" class="bg-white rounded-2xl shadow-xl p-6 flex-1 hidden opacity-0 transform translate-y-4 transition-all duration-300">
+    <div>
+      <h3 id="event-title" class="text-2xl font-bold text-gray-800 mb-3"></h3>
+      <p id="event-description" class="text-gray-600 leading-relaxed"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Pasar eventos al cliente -->
+<div id="calendar-container" data-events={JSON.stringify(events)} class="hidden"></div>
+
+<script>
+  import dayjs, { type Dayjs } from 'dayjs';
+  import 'dayjs/locale/es.js';
+  dayjs.locale('es');
+
+ interface CalendarEvent {
+    date: string;
+    title: string;
+    color: string;
+    description: string;
+  }
+  const container = document.getElementById('calendar-container');
+  const events = JSON.parse(container!.dataset.events || '[]');
+
+  let currentDate = dayjs();
+
+  const calendarTitle = document.getElementById('calendar-title');
+  const calendarDays = document.getElementById('calendar-days');
+  const eventDetail = document.getElementById('event-detail');
+  const eventTitle = document.getElementById('event-title');
+  const eventDescription = document.getElementById('event-description');
+  const prevBtn = document.getElementById('prev-month');
+  const nextBtn = document.getElementById('next-month');
+
+  function renderCalendar(date: Dayjs) {
+    calendarTitle!.textContent = date.format('MMMM YYYY');
+    calendarDays!.innerHTML = '';
+
+    const startOfMonth = date.startOf('month');
+    const endOfMonth = date.endOf('month');
+    const daysInMonth = endOfMonth.date();
+    const firstDayOfWeek = (startOfMonth.day() + 6) % 7; // lunes como primer día
+
+    for (let i = 0; i < firstDayOfWeek; i++) {
+      const emptyDiv = document.createElement('div');
+      calendarDays!.appendChild(emptyDiv);
+    }
+
+    for (let i = 1; i <= daysInMonth; i++) {
+      const dayDate = startOfMonth.date(i);
+      const event = events.find((e: CalendarEvent) => e.date === dayDate.format('YYYY-MM-DD'));
+
+      const dayEl = document.createElement('div');
+      dayEl.textContent = i.toString();
+      dayEl.className = `p-3 rounded-lg cursor-pointer font-semibold transition ${
+        event ? event.color + ' text-white hover:brightness-110' : 'bg-gray-50 hover:bg-gray-200'
+      }`;
+
+      dayEl.addEventListener('click', () => {
+        if (event) {
+          eventTitle!.textContent = event.title;
+          eventDescription!.textContent = event.description;
+          eventDetail!.classList.remove('hidden');
+          setTimeout(() => {
+            eventDetail!.classList.remove('opacity-0', 'translate-y-4');
+          }, 10);
+        } else {
+          eventDetail!.classList.add('opacity-0', 'translate-y-4');
+          setTimeout(() => {
+            eventDetail!.classList.add('hidden');
+          }, 300);
+        }
+      });
+
+      calendarDays!.appendChild(dayEl);
+    }
+  }
+
+  prevBtn!.addEventListener('click', () => {
+    currentDate = currentDate.subtract(1, 'month');
+    renderCalendar(currentDate);
+  });
+
+  nextBtn!.addEventListener('click', () => {
+    currentDate = currentDate.add(1, 'month');
+    renderCalendar(currentDate);
+  });
+
+  renderCalendar(currentDate);
+</script>
