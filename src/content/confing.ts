@@ -24,6 +24,7 @@ const grades = defineCollection({
       age: z.number(),
       birthday: z.string(), // Si quieres, se puede hacer más estricto con z.string().date()
       address: z.string(),
+      schedule: z.string(),
       favorites: z.object({
         color: z.string(),
         food: z.string(),

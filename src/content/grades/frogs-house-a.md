@@ -7,6 +7,7 @@ teacher:
   age: 28
   birthday: "1997-04-16"
   address: "duvannmunoz@cca.edu.co"
+  schedule: "/teachers/horario-frogs.png"
   favorites:
     color: "Green"
     food: "Hamburguesa"

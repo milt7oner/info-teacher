@@ -6,7 +6,6 @@ const t = post.frontmatter.teacher;
 <div class="flex items-center justify-center ">
   <div class="max-w-5xl w-full">
     <div class="max-w-5xl mx-auto">
-      
       <div class="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6 p-6">
         <!-- Lado Izquierdo -->
         <div class="p-4 flex flex-col text-left">
@@ -18,7 +17,7 @@ const t = post.frontmatter.teacher;
               class="w-38 h-48 rounded-lg object-cover border-4 border-purple-300 shadow flex-shrink-0"
             />
 
-            <!-- Info al lado de la imagen -->
+            <!-- Info -->
             <div>
               <h2 class="text-green-700 font-extrabold text-xl">{t.name}</h2>
               <p class="text-purple-800 font-medium">{t.subject}</p>
@@ -28,15 +27,10 @@ const t = post.frontmatter.teacher;
           <!-- Datos -->
           <div class="mt-4 w-full text-sm space-y-1">
             <p><span class="text-green-700 font-bold">Age:</span> {t.age}</p>
-            <p>
-              <span class="text-green-700 font-bold">Birthday:</span>
-              {t.birthday}
-            </p>
+            <p><span class="text-green-700 font-bold">Birthday:</span> {t.birthday}</p>
             <p>
               <span class="text-green-700 font-bold">Address:</span>
-              <a class="text-blue-600" href={`mailto:${t.address}`}
-                >{t.address}</a
-              >
+              <a class="text-blue-600" href={`mailto:${t.address}`}>{t.address}</a>
             </p>
           </div>
 
@@ -44,26 +38,32 @@ const t = post.frontmatter.teacher;
           <div class="mt-4 w-full">
             <h3 class="text-green-700 font-bold mb-1">Favorites</h3>
             <ul class="text-sm space-y-1">
-              {
-                Object.entries(t.favorites).map(([key, value]) => (
-                  <li>
-                    <span class="capitalize font-bold">{key}:</span> {value}
-                  </li>
-                ))
-              }
+              {Object.entries(t.favorites).map(([key, value]) => (
+                <li>
+                  <span class="capitalize font-bold">{key}:</span> {value}
+                </li>
+              ))}
             </ul>
+          </div>
+
+          <!-- Botón para abrir modal -->
+          <div class="mt-6">
+            <button 
+              id="openSchedule"
+              class="bg-[#535983] text-white px-4 py-2 rounded-md hover:bg-[#a80000] hover:text-white shadow"
+            >
+              📅 Schedule School
+            </button>
           </div>
         </div>
 
         <!-- Lado Derecho -->
         <div class="flex flex-col md:p-14">
           <div class="flex items-center gap-2">
-            
             <h3 class="text-2xl font-bold text-gray-700">Meet the Teacher</h3>
-            <span
-              class="bg-yellow-400 text-white font-bold px-4 py-1 rounded-full shadow"
-              >Hello!</span
-            >
+            <span class="bg-yellow-400 text-white font-bold px-4 py-1 rounded-full shadow">
+              Hello!
+            </span>
           </div>
           <article class="mt-4 text-gray-700 leading-relaxed space-y-4">
             <post.default />
@@ -78,3 +78,42 @@ const t = post.frontmatter.teacher;
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div id="scheduleModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+  <div class="bg-white rounded-2xl shadow-lg max-w-3xl w-full relative p-6">
+    <!-- Botón cerrar -->
+    <button id="closeSchedule" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-xl">
+      ✖
+    </button>
+    
+    <h2 class="text-xl font-bold text-gray-700 mb-4">Class Schedule</h2>
+    
+    <!-- Imagen del horario -->
+    <img src={t.schedule} alt="Schedule" class="w-full rounded-lg shadow-md" />
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById("openSchedule");
+  const closeBtn = document.getElementById("closeSchedule");
+  const modal = document.getElementById("scheduleModal");
+
+  openBtn?.addEventListener("click", () => {
+    modal!.classList.remove("hidden");
+    modal!.classList.add("flex"); // para centrar con flexbox
+  });
+
+  closeBtn?.addEventListener("click", () => {
+    modal!.classList.add("hidden");
+    modal!.classList.remove("flex");
+  });
+
+  // Cerrar si se hace clic fuera del modal
+  modal?.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+  });
+</script>
