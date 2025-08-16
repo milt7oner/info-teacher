@@ -3,12 +3,15 @@ import { defineCollection, z } from "astro:content";
 const events = defineCollection({
   type: "content",
   schema: z.object({
-    date: z.string(),
-    title: z.string(),
-    color: z.string(),
-    description: z.string(),
+    events: z.array(z.object({
+      date: z.string(),
+      title: z.string(),
+      color: z.string(),
+      description: z.string(),
+    })),
   }),
 });
+
 
 const grades = defineCollection({
   type: "content",
