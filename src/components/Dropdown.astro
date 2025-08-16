@@ -4,12 +4,17 @@ import grades from "../data/grades.json";
 
 <section class="w-full max-w-xs mx-auto">
   <form
-    onsubmit="event.preventDefault(); window.location.href = '/grade/' + this.level.value;"
+    onsubmit="
+      event.preventDefault(); 
+      const level = this.level.value;
+      localStorage.setItem('selectedTeacher', level); 
+      window.location.href = '/grade/' + level;
+    "
     class="flex flex-col gap-4"
   >
-    <label for="level" class="text-[#535983] font-semibold text-sm"
-      >Choose Grade</label
-    >
+    <label for="level" class="text-[#535983] font-semibold text-sm">
+      Choose Grade
+    </label>
 
     <div class="relative">
       <select
@@ -29,9 +34,7 @@ import grades from "../data/grades.json";
       </select>
 
       <!-- Icono flecha -->
-      <div
-        class="pointer-events-none absolute inset-y-0 right-3 flex items-center"
-      >
+      <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center">
         <svg
           class="w-5 h-5 text-gray-400"
           fill="none"
@@ -39,10 +42,7 @@ import grades from "../data/grades.json";
           stroke-width="2"
           viewBox="0 0 24 24"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19 9l-7 7-7-7"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
         </svg>
       </div>
     </div>
