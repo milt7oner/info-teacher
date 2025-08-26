@@ -1,12 +1,12 @@
 ---
 title: "Coding Club"
 teacher:
-  name: "Milton Duvan Muñoz Sanchez"
-  subject: "Coding Teacher"
+  name: "Diego Alzate Cruz"
+  subject: "STEM Teacher"
   photo: "/teachers/diego.jpg"
   age: 28
   birthday: "1997-04-16"
-  address: "duvannmunoz@cca.edu.co"
+  address: "diegoalzate@cca.edu.co"
   favorites:
     color: "Green"
     food: "Hamburguesa"
