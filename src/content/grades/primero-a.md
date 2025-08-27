@@ -7,6 +7,7 @@ teacher:
   age:
   birthday: "December 18th"
   address: "jesicadorado@cca.edu.co"
+  schedule: "/teachers/first-sh-a.jpg"
   favorites:
     color: "Black"
     food: "Pasta"

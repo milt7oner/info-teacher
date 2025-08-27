@@ -7,7 +7,7 @@ teacher:
   age: 
   birthday: "9/Junio"
   address: "lisethortiz@cca.edu.co"
-  schedule: "/teachers/horario-frogs.png"
+  schedule: "/teachers/kittens-sh-a.jpg"
   favorites:
     color: "Blue"
     food: "Pasta "

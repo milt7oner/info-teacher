@@ -7,6 +7,7 @@ teacher:
   age: 34
   birthday: "18/12/1991"
   address: "saracortes@cca.edu.co"
+  schedule: "/teachers/fourth-sh-b.jpg"
   favorites:
     color: "Black"
     food: "Hamburguer"

@@ -7,6 +7,7 @@ teacher:
   age: 30
   birthday: "'11/12/1995"
   address: "yulidiaz@cca.edu.co"
+  schedule: "/teachers/third-sh-a.jpg"
   favorites:
     color: "Blue"
     food: "Chocolate cake "

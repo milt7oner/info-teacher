@@ -7,6 +7,7 @@ teacher:
   age: 33
   birthday: "'04 06 1992"
   address: "carladreher@cca.edu.co"
+  schedule: "/teachers/first-sh-b.jpg"
   favorites:
     color: "Blue "
     food: "Lasagna"

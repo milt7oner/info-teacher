@@ -7,6 +7,7 @@ teacher:
   age: 28
   birthday: "1997-04-16"
   address: "diegoalzate@cca.edu.co"
+  schedule: "/teachers/fifth-sh-a.jpg"
   favorites:
     color: "Green"
     food: "Hamburguesa"

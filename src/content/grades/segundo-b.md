@@ -7,6 +7,7 @@ teacher:
   age: 24
   birthday: "February 27th, 2001"
   address: "lisetgalindez@cca.edu.co"
+  schedule: "/teachers/second-sh-b.jpg"
   favorites:
     color: "Red"
     food: "Any type of pasta"

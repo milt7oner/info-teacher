@@ -7,7 +7,7 @@ teacher:
   age: 
   birthday: "26 de julio "
   address: "Ingridortega@cca.edu.co"
-  schedule: "/teachers/horario-frogs.png"
+  schedule: "/teachers/frogs-sh.jpg"
   favorites:
     color: "Blue"
     food: "Breaded chicken"

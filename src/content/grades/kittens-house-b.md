@@ -7,6 +7,7 @@ teacher:
   age: 
   birthday: ""
   address: ""
+  schedule: "/teachers/kittens-sh-b.jpg"
   favorites:
     color: ""
     food: ""

@@ -7,6 +7,7 @@ teacher:
   age: 26
   birthday: "'03/03/1999"
   address: "samuelayala@cca.edu.co"
+  schedule: "/teachers/fifth-sh-a.jpg"
   favorites:
     color: "Dark blue"
     food: "Beef with fries"

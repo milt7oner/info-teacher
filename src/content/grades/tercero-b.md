@@ -3,10 +3,11 @@ title: ""
 teacher:
   name: ""
   subject: "STEM Teacher"
-  photo: "/teachers/.jpg"
+  photo: ""
   age: 
   birthday: ""
   address: ""
+  schedule: "/teachers/third-sh-b.jpg"
   favorites:
     color: ""
     food: ""

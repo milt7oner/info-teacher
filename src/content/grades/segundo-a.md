@@ -7,6 +7,7 @@ teacher:
   age: 28
   birthday: "17th november 1981"
   address: "dayansalazar@cca.edu.co"
+  schedule: "/teachers/second-sh-a.jpg"
   favorites:
     color: "Black"
     food: "Pasta"

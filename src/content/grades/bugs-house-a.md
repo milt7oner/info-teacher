@@ -7,6 +7,7 @@ teacher:
   age: 37
   birthday: "15/09/1988"
   address: "anyvidal@cca.edu.co"
+  schedule: "/teachers/bugs-sh-a.jpg"
   favorites:
     color: "Black"
     food: "Sea food"

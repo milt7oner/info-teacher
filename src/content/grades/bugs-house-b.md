@@ -7,6 +7,7 @@ teacher:
   age: 28
   birthday: "1997-04-16"
   address: "karinalopez@cca.edu.co"
+  schedule: "/teachers/bugs-sh-b.jpg"
   favorites:
     color: "Red"
     food: "Ceviche de camarón "

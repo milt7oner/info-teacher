@@ -7,6 +7,7 @@ teacher:
   age: 32
   birthday: "August 6th, 1993"
   address: "vanessasarria@cca.edu.co"
+  schedule: "/teachers/first-sh-c.jpg"
   favorites:
     color: "Black"
     food: "Espagueti "

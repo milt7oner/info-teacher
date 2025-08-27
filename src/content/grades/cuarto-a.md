@@ -3,10 +3,11 @@ title: ""
 teacher:
   name: ""
   subject: ""
-  photo: "/teachers/.jpg"
+  photo: ""
   age: 
   birthday: ""
   address: ""
+  schedule: "/teachers/fourth-sh-a.jpg"
   favorites:
     color: ""
     food: ""

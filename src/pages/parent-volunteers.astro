@@ -5,54 +5,92 @@ import Navbar from "../components/Navbar.astro";
 
 <Layout>
   <Navbar />
-<main class="min-h-screen  py-16 px-4 sm:px-6 lg:px-8">
+  <main
+    class="min-h-screen  py-16 px-4 sm:px-6 lg:px-8"
+  >
     <div class="max-w-5xl mx-auto">
-      <!-- Header -->
-      <header class="text-center mb-16">
-        <h1 class="text-5xl font-extrabold text-gray-900 tracking-tight sm:text-6xl">
-          Padres Voluntarios
-        </h1>
-        <p class="mt-4 text-2xl font-bold text-indigo-600">
-          We make our school cool!
-        </p>
-        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-          ¡Únete a nuestra comunidad de padres voluntarios y contribuye a crear un entorno lleno de alegría y crecimiento para nuestros niños!
+      <!-- Header with Image -->
+      <header class="text-center mb-12">
+        <img
+          src="/up.png"
+          alt="We make our school cool"
+          class="mx-auto w-full max-w-2xl object-cover"
+        />
+        <p class="mt-4 text-2xl font-bold text-[#535983]">
+          ¡Únete a nuestra comunidad de padres voluntarios!
         </p>
       </header>
 
       <!-- Main Content Section -->
-      <section class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-        <div class="absolute -top-4 left-4 bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+      <section
+        class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+      >
+        <div
+          class="absolute -top-4 left-4 bg-[#73b10f] text-white rounded-full w-12 h-12 flex items-center justify-center"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            ></path>
           </svg>
         </div>
         <div class="mt-4">
           <p class="text-gray-600 leading-relaxed mb-6">
-            <span class="font-semibold text-indigo-700">¡Gracias padres voluntarios</span> por su disposición para invertir su tiempo, entusiasmo y habilidades en la felicidad de nuestros niños. Su buena energía y los esfuerzos en equipo con nuestros maestros y staff crean en nuestro colegio un ambiente de crecimiento y desarrollo excepcional!
+            <span class="font-semibold text-[#192159]"
+              >¡Gracias padres voluntarios</span
+            > por su disposición para invertir su tiempo, entusiasmo y habilidades
+            en la felicidad de nuestros niños. Su buena energía y los esfuerzos en
+            equipo con nuestros maestros y staff crean en nuestro colegio un ambiente
+            de crecimiento y desarrollo excepcional!
           </p>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Creemos que los modelos de liderazgo y sociedad funcional generan una sana participación de los padres en las actividades del colegio, afirmando en los niños características de autoestima, autoconfianza y pertenencia.
+            Creemos que los modelos de liderazgo y sociedad funcional generan
+            una sana participación de los padres en las actividades del colegio,
+            afirmando en los niños características de autoestima, autoconfianza
+            y pertenencia.
           </p>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Nos esforzamos en crear para nuestrasDOF nuestras familias un ambiente armonioso en el que vivan las más lindas experiencias y que se sientan orgullosos de compartir con sus niños los valores que los identifican como miembros importantes de su colegio.
+            Nos esforzamos en crear para nuestras familias un ambiente armonioso
+            en el que vivan las más lindas experiencias y que se sientan
+            orgullosos de compartir con sus niños los valores que los
+            identifican como miembros importantes de su colegio.
           </p>
-          <p class="text-xl font-bold text-indigo-800 mb-6">
+          <p class="text-xl font-bold text-[#192159] mb-6">
+            ¡Gracias por hacer nuestro colegio genial! El tiempo que ustedes
+            dedican a la vida escolar de los niños asegura autoestima, sana
+            pertenencia y experiencias que añaden gran valor a sus vidas.
             ¡Bienvenido al grupo de padres voluntarios!
           </p>
           <div class="text-center">
             <a
-              href="https://forms.gle/XXXXXXXXXXXXXX"
+              href="https://forms.gle/iVp1mnjDemQ53jwL8"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300"
+              class="inline-block bg-[#192159] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#73b10f] transition duration-300"
             >
               Únete Ahora - Formulario de Inscripción
             </a>
           </div>
         </div>
       </section>
+
+      <!-- Bottom Image -->
+      <div class="mt-12 text-center">
+        <img
+          src="/down.png"
+          alt="Volunteer Parents"
+          class="mx-auto w-full max-w-2xl object-cover"
+        />
+      </div>
     </div>
   </main>
-
 </Layout>
