@@ -7,6 +7,7 @@ teacher:
   age: 34
   birthday: "'28-08-1991"
   address: "sandraastudillo@cca.edu.co"
+  schedule: "/teachers/kinder-sh-b.jpg"
   favorites:
     color: "Black"
     food: "Pasta"

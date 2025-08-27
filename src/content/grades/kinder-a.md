@@ -7,6 +7,7 @@ teacher:
   age: 
   birthday: "20th of november"
   address: "yhulianavarona@cca.edu.co"
+  schedule: "/teachers/kinder-sh-a.jpg"
   favorites:
     color: "Pink "
     food: "Hamburger "
