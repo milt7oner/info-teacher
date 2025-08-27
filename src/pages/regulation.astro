@@ -1,0 +1,332 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Calendar from "../components/Calendar.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout>
+  <Navbar />
+  <main
+    class="min-h-screen  py-16 px-4 sm:px-6 lg:px-8"
+  >
+    <div class="max-w-5xl mx-auto">
+      <!-- Header -->
+      <header class="text-center mb-16">
+        <h1
+          class="text-5xl font-extrabold text-gray-900 tracking-tight sm:text-6xl"
+        >
+          Reglamento CCA
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Normas y lineamientos para una convivencia armónica y un desarrollo
+          integral en el CCA.
+        </p>
+      </header>
+
+      <!-- Grid Layout for Sections -->
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Uniformes Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            Uniformes CCA
+          </h2>
+          <h3 class="text-lg font-semibold text-gray-700 mb-3">
+            Presentación Personal
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span> Uniforme siempre limpio,
+              completo y en buen estado.
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span> Cabello arreglado y cortes
+              acordes al reglamento.
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span> No maquillaje ni accesorios
+              llamativos.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Almuerzos Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 6h18M3 12h18M3 18h18"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            Almuerzos CCA
+          </h2>
+          <h3 class="text-lg font-semibold text-gray-700 mb-3">Servicio</h3>
+          <p class="text-gray-600 mb-4">
+            El almuerzo se puede adquirir desde la tienda escolar o traerlo
+            desde casa.
+          </p>
+          <h3 class="text-lg font-semibold text-gray-700 mb-3">Normas</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">•</span> Turnos por grados y horarios
+              establecidos.
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">•</span> Puntualidad, orden, buenos
+              modales y no desperdiciar comida.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Permisos Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-yellow-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            Permisos CCA
+          </h2>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2">•</span> Se solicitan por escrito
+              a través de la plataforma Phidias.
+            </li>
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2">•</span> Solo se autorizan con justificación
+              válida (calamidad doméstica, citas médicas, visita a universidades
+              para grado once).
+            </li>
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2">•</span> Padres o acudientes son
+              responsables de recoger y entregar al estudiante en caso de salida.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Llegadas Tarde Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            Llegadas Tarde CCA
+          </h2>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">•</span> Se debe ingresar puntualmente
+              al colegio.
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">•</span> Llegadas tarde se registran
+              en la recepción y coordinación de convivencia.
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">•</span> La reincidencia genera llamados
+              de atención y comunicación a padres.
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">•</span> La puntualidad es compromiso
+              de estudiantes y familias.
+            </li>
+          </ul>
+        </section>
+
+        <!-- No Tareas Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            No Tareas CCA
+          </h2>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-purple-500 mr-2">•</span> El aprendizaje se desarrolla
+              en la jornada escolar.
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-500 mr-2">•</span> No se envían tareas rutinarias
+              para la casa.
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-500 mr-2">•</span> El tiempo en casa es para
+              la familia, descanso y recreación.
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-500 mr-2">•</span> Solo se asignan actividades
+              especiales en casos excepcionales (lecturas, proyectos o refuerzos
+              puntuales).
+            </li>
+          </ul>
+        </section>
+
+        <!-- Academias Extracurriculares Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            Academias Extracurriculares CCA
+          </h2>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-2">•</span> Espacios de formación en
+              deportes, arte y cultura.
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-2">•</span> Refuerzan talentos, disciplina
+              y trabajo en equipo.
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-500 mr-2">•</span> Requieren inscripción previa
+              y compromiso de asistencia permanente.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Currículo Section -->
+        <section
+          class="relative bg-white shadow-xl rounded-xl p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl md:col-span-2"
+        >
+          <div
+            class="absolute -top-4 left-4 bg-teal-600 text-white rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.747 0-3.332.477-4.5 1.253"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 mt-4">
+            Currículo CCA
+          </h2>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-teal-500 mr-2">•</span> Basado en estándares nacionales
+              e internacionales.
+            </li>
+            <li class="flex items-start">
+              <span class="text-teal-500 mr-2">•</span> Bilingüe y competencias globales.
+            </li>
+            <li class="flex items-start">
+              <span class="text-teal-500 mr-2">•</span> Incluye formación académica,
+              ética, artística, deportiva y en valores.
+            </li>
+            <li class="flex items-start">
+              <span class="text-teal-500 mr-2">•</span> Busca el desarrollo integral
+              de los estudiantes.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>

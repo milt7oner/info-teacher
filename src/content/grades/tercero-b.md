@@ -1,22 +1,22 @@
 ---
-title: "Coding Club"
+title: ""
 teacher:
-  name: "Diego Alzate Cruz"
+  name: ""
   subject: "STEM Teacher"
-  photo: "/teachers/diego.jpg"
-  age: 28
-  birthday: "1997-04-16"
-  address: "diegoalzate@cca.edu.co"
+  photo: "/teachers/.jpg"
+  age: 
+  birthday: ""
+  address: ""
   favorites:
-    color: "Green"
-    food: "Hamburguesa"
-    pet: "Cat"
-    music: "Worship"
-    movie: "Anime"
-    season: "Summer"
-    place: "Church"
-    sports: "Football"
-    subject: "Quantum Computation"
+    color: ""
+    food: ""
+    pet: ""
+    music: ""
+    movie: ""
+    season: ""
+    place: ""
+    sports: ""
+    subject: ""
 ---
 
 Welcome to **Coding Club**!  

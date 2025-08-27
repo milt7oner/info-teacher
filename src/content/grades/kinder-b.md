@@ -1,29 +1,23 @@
 ---
-title: "Coding Club"
+title: "Kindergarten B"
 teacher:
-  name: "Diego Alzate Cruz"
-  subject: "STEM Teacher"
-  photo: "/teachers/diego.jpg"
-  age: 28
-  birthday: "1997-04-16"
-  address: "diegoalzate@cca.edu.co"
+  name: "Sandra Carolina Astudillo Ruíz "
+  subject: "Kindergarten B"
+  photo: "/teachers/kinder-b.jpg"
+  age: 34
+  birthday: "'28-08-1991"
+  address: "sandraastudillo@cca.edu.co"
   favorites:
-    color: "Green"
-    food: "Hamburguesa"
-    pet: "Cat"
-    music: "Worship"
-    movie: "Anime"
+    color: "Black"
+    food: "Pasta"
+    pet: "Dogs"
+    music: "Rock"
+    movie: "Brave"
     season: "Summer"
-    place: "Church"
-    sports: "Football"
-    subject: "Quantum Computation"
+    place: "A museum"
+    sports: "Running"
+    subject: "English"
 ---
 
-Welcome to **Coding Club**!  
-I'm excited to be your instructor this year. As a Telematics Engineer with a passion for technology and education, I believe coding is one of the most powerful tools we can learn to shape the future.
-
-Whether you're just starting out or already experimenting with code, this club is designed to spark your creativity and help you grow.
-
-Outside of the classroom, I enjoy sports, traveling, and diving into video games — especially the ones that challenge your logic and strategy.
-
-I love seeing how tech connects with everyday life, and I hope to share that enthusiasm with you. Together, we'll explore programming languages like Python and JavaScript, build cool projects, and learn how to think like real developers.
+Welcome to **Kindergarten**!  
+Dear Parents and Students,  Welcome to a brand new school year in Kindergarten! We are so excited to begin this journey together. This year will be filled with wonderful learning, new challenges, and many opportunities to grow. Our goals are to help each child develop a love for learning, strengthen their skills, and build confidence as they explore the world around them.  We are ready to receive our students with joy, patience, and care, creating a safe and happy environment where every child feels valued. Together, we will make this a year full of discovery, growth, and memorable experiences.  With love and enthusiasm, Ms. Astudillo.

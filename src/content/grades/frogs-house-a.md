@@ -1,30 +1,24 @@
 ---
-title: "Coding Club"
+title: "Frogs A"
 teacher:
-  name: "Milton Duvan Muñoz Sanchez"
-  subject: "Coding Teacher"
-  photo: "/teachers/duvan.png"
-  age: 28
-  birthday: "1997-04-16"
-  address: "duvannmunoz@cca.edu.co"
+  name: "Ingrid Carolina Ortega "
+  subject: "Frogs A"
+  photo: "/teachers/frogs.jpg"
+  age: 
+  birthday: "26 de julio "
+  address: "Ingridortega@cca.edu.co"
   schedule: "/teachers/horario-frogs.png"
   favorites:
-    color: "Green"
-    food: "Hamburguesa"
+    color: "Blue"
+    food: "Breaded chicken"
     pet: "Cat"
-    music: "Worship"
-    movie: "Anime"
-    season: "Summer"
-    place: "Church"
-    sports: "Football"
-    subject: "Quantum Computation"
+    music: "Ballads"
+    movie: "The boy in the striped pyjamas"
+    season: "Christmasr"
+    place: "The beach"
+    sports: "Basketball"
+    subject: "Arts"
 ---
 
-Welcome to **Coding Club**!  
-I'm excited to be your instructor this year. As a Telematics Engineer with a passion for technology and education, I believe coding is one of the most powerful tools we can learn to shape the future.
-
-Whether you're just starting out or already experimenting with code, this club is designed to spark your creativity and help you grow.
-
-Outside of the classroom, I enjoy sports, traveling, and diving into video games — especially the ones that challenge your logic and strategy.
-
-I love seeing how tech connects with everyday life, and I hope to share that enthusiasm with you. Together, we'll explore programming languages like Python and JavaScript, build cool projects, and learn how to think like real developers.
+Welcome to **Frogs A**!  
+Welcome to a new school year, I am very happy to be your teacher. My goal is that each child feels protected, respected and eager to learn.
