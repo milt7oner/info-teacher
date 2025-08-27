@@ -21,4 +21,10 @@ teacher:
 ---
 
 Welcome to **Bug's House B**!  
+Hi! My name is Mrs López. I will be your Bug's House grade B
+teacher this year! | love teaching
+and have taught for the past 11
+year at Campestre Americano
+School. We are going to have so
+much fun this year
 I am very happy to be with your children this new year. Together we will be able to carry out fun activities that allow for wonderful learning.rs.

@@ -1,30 +1,24 @@
 ---
-title: "Coding Club"
+title: "Fifth B"
 teacher:
-  name: "Diego Alzate Cruz"
-  subject: "STEM Teacher"
-  photo: "/teachers/diego.jpg"
-  age: 28
-  birthday: "1997-04-16"
-  address: "diegoalzate@cca.edu.co"
-  schedule: "/teachers/fifth-sh-a.jpg"
+  name: "Nadia Dorado"
+  subject: "Fifth B"
+  photo: "/teachers/"
+  age: 29
+  birthday: "May 25,1996"
+  address: "nadiadorado@cca.edu.co"
+  schedule: "/teachers/fifth-sh-b.jpg"
   favorites:
-    color: "Green"
-    food: "Hamburguesa"
-    pet: "Cat"
-    music: "Worship"
-    movie: "Anime"
-    season: "Summer"
-    place: "Church"
-    sports: "Football"
-    subject: "Quantum Computation"
+    color: "Green and purple"
+    food: "Ramen"
+    pet: "Cats/ humming bird"
+    music: "Jazz and classical music"
+    movie: "Fantastic Planet"
+    season: "Spring"
+    place: "Forest eco systems"
+    sports: "Cycling/ Swimming"
+    subject: "Ecology"
 ---
 
-Welcome to **Coding Club**!  
-I'm excited to be your instructor this year. As a Telematics Engineer with a passion for technology and education, I believe coding is one of the most powerful tools we can learn to shape the future.
-
-Whether you're just starting out or already experimenting with code, this club is designed to spark your creativity and help you grow.
-
-Outside of the classroom, I enjoy sports, traveling, and diving into video games — especially the ones that challenge your logic and strategy.
-
-I love seeing how tech connects with everyday life, and I hope to share that enthusiasm with you. Together, we'll explore programming languages like Python and JavaScript, build cool projects, and learn how to think like real developers.
+Welcome to **Fifth B**!  
+Dear Students and Families,  Welcome to 5th grade! I am so excited to begin this school year with you. This year will be full of learning, growth, and wonderful experiences, and I can’t wait to share the journey with each of you.  One of my biggest dreams for this school year is to create a classroom where everyone feels safe, valued, and motivated to do their best. My goal is not only to help students improve their English and academic skills, but also to guide them in becoming curious learners, kind friends, and confident young people. I believe that learning should be fun, interactive, and connected to the world around us in social and environmental endeavors. A little about me: I have a deep love for nature, forests, and conservation. I believe that caring for the environment is one of the most important things we can do, and I enjoy sharing this passion with my students through stories, class discussions, and creative projects that connect our learning to the world around us. Outside of school, I love spending time outdoors, reading, listening to music, and discovering new ways to live in harmony with nature.

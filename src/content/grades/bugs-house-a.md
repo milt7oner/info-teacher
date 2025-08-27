@@ -21,4 +21,17 @@ teacher:
 ---
 
 Welcome to **Bugs House A**!  
-I'm  excited for all the learning, fun, and growth ahead. Let’s work together to make it a great year! love teaching so I enjoy helping students learn and become confident. 
+Dear Students and Families,
+
+Welcome to Bugs' House A!
+ I am very happy to be your teacher. I am excited to learn and grow together with you. I love helping students learn new things and feel proud of their hard work. I enjoy reading, writing, and learning about different topics.
+
+This year, I want to help every student feel safe, happy, and ready to learn. We will work hard, try our best, and help each other.  I want our classroom to be a kind and respectful place for everyone.
+
+Thank you for being part of our classroom community.
+ I look forward to a great year together!
+
+With warm wishes,
+
+Ms. Vidal
+Bugs' House A Teacher

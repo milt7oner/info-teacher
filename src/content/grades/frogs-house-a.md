@@ -21,4 +21,9 @@ teacher:
 ---
 
 Welcome to **Frogs A**!  
-Welcome to a new school year, I am very happy to be your teacher. My goal is that each child feels protected, respected and eager to learn.
+I'm excited to welcome you to this new school year. This is a very special moment for me, and I look forward to getting to know each of you and starting this new year together.
+
+I want that you feel comfortable and safe, and I'm committed to creat a warm and stimulating environment where children can learn, grow, and develop in a holistic way. I'm here to support and help you in everything you need.
+
+My goal is to work with you to make a success school year and see our children reach their full potential. I'm excited to share special moments together. Ms. Ortega de Frogs' House
+
